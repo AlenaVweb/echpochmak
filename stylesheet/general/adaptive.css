@@ -1,0 +1,13 @@
+@media (orientation: portrait) {
+    .show-on-landscape {
+        display: none !important;
+        visibility: hidden !important;
+    }
+}
+
+@media (orientation: landscape) {
+    .show-on-portrait {
+        display: none !important;
+        visibility: hidden !important;
+    }
+}

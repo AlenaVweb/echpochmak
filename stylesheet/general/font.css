@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Cheshem-Regular';
+    src: url('../../font/Cheshem-Regular.ttf') format('truetype'),
+}
+
+body, html {
+    font-family: 'Cheshem-Regular';
+    color: white;
+    text-transform: uppercase;
+}
+
+.ticker {
+    font-size: 6vh;
+    letter-spacing: .2em;
+    padding: 0 .2em;
+    overflow: hidden;
+}
+
+.font-red {
+    color: red;
+}
+
+.font-blue {
+    color: #0047ff;
+}

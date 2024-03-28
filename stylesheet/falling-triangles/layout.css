@@ -1,0 +1,192 @@
+#falling-triangle-screen {
+    background-image: linear-gradient(red 0%, #0047ff 100%);
+}
+
+#falling-triangle-ticker {
+    gap: 0.2em;
+}
+
+#falling-triangle-bg {
+    position: relative;
+}
+
+#triangle-spinner-wrapper {
+    width: 70vw;
+    height: 70vw;
+
+    margin-top: -15vw;
+
+    overflow: hidden;
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/* Commented parts are for circle rotation animation */
+.spinner-circle /*, .spinner-circle-mask */ {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+}
+
+#spinner-first-circle {
+    clip-path: circle(50%);
+    /* transform: rotate(30deg); */
+}
+
+#spinner-second-circle {
+    clip-path: circle(42.5%);
+    /* transform: rotate(-60deg); */
+}
+
+#spinner-third-circle {
+    clip-path: circle(35%);
+    /* transform: rotate(90deg); */
+}
+
+#spinner-fourth-circle {
+    clip-path: circle(27.5%);
+    /* transform: rotate(-120deg); */
+}
+
+#spinner-fifth-circle {
+    clip-path: circle(20%);
+    /* transform: rotate(150deg); */
+}
+
+#spinner-sixth-circle {
+    clip-path: circle(12.5%);
+    /* transform: rotate(-180deg); */
+}
+
+/* .spinner-circle-mask-black {
+    background-image: linear-gradient(to right, transparent 0 49.5%, black 49.5% 50.5%, transparent 50.5% 100%);
+}
+
+.spinner-circle-mask-blue {
+    background-image: linear-gradient(to right, transparent 0 49.5%, #0047ff 49.5% 50.5%, transparent 50.5% 100%);
+}
+
+.spinner-circle-mask-red {
+    background-image: linear-gradient(to right, transparent 0 49.5%, red 49.5% 50.5%, transparent 50.5% 100%);
+} */
+
+#falling-triangle-puzzle {
+    position:relative;
+}
+
+.triangle {
+    clip-path: polygon(0 100%, 50% 0, 100% 100%);
+
+    text-align: center;
+}
+
+.triangle-box {
+    filter: url(../../image/svg/round-filter.svg#round-filter);
+}
+
+#triangle-0,
+#triangle-3,
+#triangle-4,
+#triangle-7,
+#triangle-11 {
+    width: 15vw;
+    height: 20vh;
+
+    position: absolute;
+}
+#triangle-1,
+#triangle-2,
+#triangle-6,
+#triangle-10 {
+    width: 6vw;
+    height: 8vh;
+
+    position: absolute;
+}
+
+#triangle-5,
+#triangle-8,
+#triangle-9 {
+    width: 9vw;
+    height: 12vh; 
+
+    position: absolute;
+}
+
+#triangle-0 {
+    transform: rotate(-43deg);
+
+    top: 30vh;
+    left: -1vw;
+}
+#triangle-1 {
+    transform: rotate(43deg);
+
+    top: 80vh;
+    left: 10vw;
+}
+#triangle-2 {
+    transform: rotate(20deg);
+
+    top: 45vh;
+    left: 20vw;
+}
+#triangle-3 {
+    transform: rotate(140deg);
+
+    top: -1vh;
+    left: 12vw;
+}
+#triangle-4 {
+    transform: rotate(-20deg);
+
+    top: 55vh;
+    left: 30vw;
+}
+#triangle-5 {
+    transform: rotate(20deg);
+
+    top: 5vh;
+    left: 40vw;
+}
+#triangle-6 {
+    transform: rotate(95deg);
+
+    top: 50vh;
+    left: 55vw;
+}
+#triangle-7 {
+    transform: rotate(-50deg);
+
+    top: -10vh;
+    left: 55vw;
+}
+#triangle-8 {
+    transform: rotate(-10deg);
+
+    top: 30vh;
+    left: 70vw;
+}
+#triangle-9 {
+    transform: rotate(70deg);
+
+    top: 80vh;
+    left: 70vw;
+}
+#triangle-10 {
+    transform: rotate(-20deg);
+
+    top: 10vh;
+    left: 90vw;
+}
+#triangle-11 {
+    transform: rotate(20deg);
+
+    top: 45vh;
+    left: 85vw;
+}

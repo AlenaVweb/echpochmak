@@ -1,0 +1,59 @@
+body, html {
+    margin: 0;
+    padding: 0;
+
+    scroll-snap-type: y mandatory;
+}
+
+body::-webkit-scrollbar, html::-webkit-scrollbar {
+    display: none;
+}
+
+.screen {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    scroll-snap-align: end;
+
+    overflow: hidden;
+}
+
+.main-gradient-background {
+    background-image: linear-gradient(red 0%, #0047ff 33%, red 66%, #0047ff 100%);
+}
+
+.ticker, .ticker-reverse {
+    min-height: 10vh;
+    max-height: 15vh;
+
+    background-color: black;
+
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+
+    position: relative;
+    z-index: 99;
+}
+
+.ticker-reverse {
+    flex-direction: row-reverse;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-blue {
+    background-color: #0047ff;
+}

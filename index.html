@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main id="main-content">
+        <section id="intro-screen" class="screen main-gradient-background">
+            <article id="solve-ticker" class="ticker">
+                <span class="font-red">разгадай</span><span class="font-blue">разгадай</span>
+                <span class="font-red">разгадай</span><span class="font-blue">разгадай</span>
+                <span class="font-red">разгадай</span><span class="font-blue">разгадай</span>
+                <span class="font-red">разгадай</span><span class="font-blue">разгадай</span>
+                <span class="font-red">разгадай</span><span class="font-blue">разгадай</span>
+            </article>
+            <section id="intro-content" class="content">
+                <div id="intro-header" class="show-on-landscape">
+                    <h1>Три угла Три стороны</h1>
+                </div>
+                <div id="intro-header-mobile" class="show-on-portrait">
+                    <h1>Три угла</h1>
+                    <h1>Три стороны</h1>
+                </div>
+            </section>
+            <article id="riddle-ticker" class="ticker">
+                <span class="font-red">загадку</span><span class="font-blue">загадку</span>
+                <span class="font-red">загадку</span><span class="font-blue">загадку</span>
+                <span class="font-red">загадку</span><span class="font-blue">загадку</span>
+                <span class="font-red">загадку</span><span class="font-blue">загадку</span>
+                <span class="font-red">загадку</span><span class="font-blue">загадку</span>
+            </article>
+        </section>
+        <section id="spin-puzzle-screen" class="screen main-gradient-background">
+            <div class="spin-puzzle-triangles">
+                    <div class="puzzle-triangle-bg puzzle-triangle-0"></div>
+                    <div class="puzzle-triangle-bg puzzle-triangle-1"></div>
+                    <div class="puzzle-triangle-bg puzzle-triangle-2"></div>
+                    <div class="puzzle-triangle-bg puzzle-triangle-3"></div>
+                    <div class="puzzle-triangle-bg puzzle-triangle-4"></div>
+                    <div class="puzzle-triangle-bg puzzle-triangle-5"></div>
+                    <div class="puzzle-triangle-bg puzzle-triangle-6"></div>
+                    <div class="puzzle-triangle-bg puzzle-triangle-7"></div>
+                    <div class="puzzle-triangle-bg puzzle-triangle-8"></div>
+                    <div class="puzzle-triangle-bg puzzle-triangle-9"></div>
+                    <div class="puzzle-triangle-bg puzzle-triangle-10"></div>
+                    <div class="puzzle-triangle-bg puzzle-triangle-11"></div>
+            </div>
+            <div id="spin-puzzle-wrapper">
+                <div id="outer-spin-circle" class="puzzle-circle bg-blue">
+                    <div class="puzzle-circle-letter letter-mask"></div>
+                </div>
+                
+                <div id="middle-spin-circle" class="puzzle-circle bg-red">
+                    <div class="puzzle-circle-letter letter-mask"></div>
+                </div>
+    
+                <div id="inner-spin-circle" class="puzzle-circle bg-black">                                
+                    <div class="puzzle-circle-letter letter-mask"></div>
+                </div>
+            </div>
+        </section>
+        <section id="falling-triangle-screen" class="screen">
+            
+            <article id="falling-triangle-ticker" class="ticker">
+                <span class="s-char">с</span><span class="b-char">б</span><span class="o-char">о</span>
+                <span class="s-char">б</span><span class="m-char">м</span>
+
+                <span class="s-char">с</span><span class="b-char">б</span><span class="o-char">о</span>
+                <span class="s-char">б</span><span class="m-char">м</span>
+                
+                <span class="s-char">с</span><span class="b-char">б</span><span class="o-char">о</span>
+                <span class="s-char">б</span><span class="m-char">м</span>
+
+                <span class="s-char">с</span><span class="b-char">б</span><span class="o-char">о</span>
+                <span class="s-char">б</span><span class="m-char">м</span>
+
+                <span class="s-char">с</span><span class="b-char">б</span><span class="o-char">о</span>
+                <span class="s-char">б</span><span class="m-char">м</span>
+
+                <span class="s-char">с</span><span class="b-char">б</span><span class="o-char">о</span>
+                <span class="s-char">б</span><span class="m-char">м</span>
+
+                <span class="s-char">с</span><span class="b-char">б</span><span class="o-char">о</span>
+                <span class="s-char">б</span><span class="m-char">м</span>
+
+                <span class="s-char">с</span><span class="b-char">б</span><span class="o-char">о</span>
+                <span class="s-char">б</span><span class="m-char">м</span>
+
+                <span class="s-char">с</span><span class="b-char">б</span><span class="o-char">о</span>
+                <span class="s-char">б</span><span class="m-char">м</span>
+
+                <span class="s-char">с</span><span class="b-char">б</span><span class="o-char">о</span>
+                <span class="s-char">б</span><span class="m-char">м</span>
+            </article>
+
+            <section id="falling-triangle-content" class="content">
+                <section id="falling-triangle-bg">
+                    <div id="triangle-spinner-wrapper">
+                        <!-- Commented blocks are animated rotating lines -->
+                        <div id="spinner-first-circle" class="spinner-circle bg-red">
+                            <!-- <div class="spinner-circle-mask spinner-circle-mask-blue infinite-animation rotate-right"></div> -->
+                        </div>
+                        <div id="spinner-second-circle" class="spinner-circle bg-black">
+                            <!-- <div class="spinner-circle-mask spinner-circle-mask-red infinite-animation rotate-left"></div> -->
+                        </div>
+                        <div id="spinner-third-circle" class="spinner-circle bg-blue">
+                            <!-- <div class="spinner-circle-mask spinner-circle-mask-black infinite-animation rotate-right"></div> -->
+                        </div>
+                        <div id="spinner-fourth-circle" class="spinner-circle bg-red">
+                            <!-- <div class="spinner-circle-mask spinner-circle-mask-blue infinite-animation rotate-left"></div> -->
+                        </div>
+                        <div id="spinner-fifth-circle" class="spinner-circle bg-black">
+                            <!-- <div class="spinner-circle-mask spinner-circle-mask-red infinite-animation rotate-right"></div> -->
+                        </div>
+                        <div id="spinner-sixth-circle" class="spinner-circle bg-blue">
+                            <!-- <div class="spinner-circle-mask spinner-circle-mask-black infinite-animation rotate-left"></div> -->
+                        </div>
+                    </div>
+                </section>
+                <section id="falling-triangle-puzzle">
+                    <div class="triangle-box">
+                        <div id="triangle-0" class="triangle bg-blue"></div>
+                    </div>
+                    <div class="triangle-box">
+                        <div id="triangle-1" class="triangle main-gradient-background"></div>
+                    </div>
+                    <div class="triangle-box">
+                        <div id="triangle-2" class="triangle main-gradient-background"></div>
+                    </div>
+                    <div class="triangle-box">
+                        <div id="triangle-3" class="triangle main-gradient-background"></div>
+                    </div>
+                    <div class="triangle-box">
+                        <div id="triangle-4" class="triangle main-gradient-background"></div>
+                    </div>
+                    <div class="triangle-box">
+                        <div id="triangle-5" class="triangle bg-blue"></div>
+                    </div>
+                    <div class="triangle-box">
+                        <div id="triangle-6" class="triangle main-gradient-background"></div>
+                    </div>
+                    <div class="triangle-box">
+                        <div id="triangle-7" class="triangle main-gradient-background"></div>
+                    </div>
+                    <div class="triangle-box">
+                        <div id="triangle-8" class="triangle bg-red"></div>
+                    </div>
+                    <div class="triangle-box">
+                        <div id="triangle-9" class="triangle main-gradient-background"></div>
+                    </div>
+                    <div class="triangle-box">
+                        <div id="triangle-10" class="triangle main-gradient-background"></div>
+                    </div>
+                    <div class="triangle-box">
+                        <div id="triangle-11" class="triangle bg-blue"></div>
+                    </div>
+                </section>
+            </section>
+        </section>
+        <section id="block-puzzle-screen" class="screen">
+            <section id="block-puzzle" class="content">
+
+            </section>
+        </section>
+        <section id="echpochmack-screen" class="screen main-gradient-background">
+            <article id="think-ticker" class="ticker">
+                <span class="font-red">подумай</span><span class="font-blue">подумай</span>
+                <span class="font-red">подумай</span><span class="font-blue">подумай</span>
+                <span class="font-red">подумай</span><span class="font-blue">подумай</span>
+                <span class="font-red">подумай</span><span class="font-blue">подумай</span>
+                <span class="font-red">подумай</span><span class="font-blue">подумай</span>
+            </article>
+            <section id="echpochmack-content" class="content">
+
+            </section>
+            <article id="author-ticker" class="ticker">
+                <span>Алёна</span><span>Ветошкина</span>
+                <span>Алёна</span><span>Ветошкина</span>
+                <span>Алёна</span><span>Ветошкина</span>
+                <span>Алёна</span><span>Ветошкина</span>
+                <span>Алёна</span><span>Ветошкина</span>
+            </article>
+        </section>
+    </main>
+
+    <!-- <script src="javascript/spin-puzzle.js" type="module"></script>
+    <script src="javascript/falling-triangle-puzzle.js" type="module"></script>
+    <script src="javascript/block-puzzle.js" type="module"></script> -->
+</body>
+</html>

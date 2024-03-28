@@ -1,0 +1,171 @@
+#spin-puzzle-screen {
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#spin-puzzle-wrapper {
+    width: 40vw;
+    height: 40vw;
+
+    position: relative;
+
+    z-index: 10;
+
+}
+
+.puzzle-circle {
+    position: absolute;
+}
+
+.puzzle-circle, .letter-mask {
+    width: 100%;
+    height: 100%;
+}
+
+
+#outer-spin-circle {
+    z-index: 1;
+
+    clip-path: circle(50%);
+}
+
+#middle-spin-circle {
+    z-index: 2;
+
+    clip-path: circle(37.5%);
+}
+
+
+#inner-spin-circle {
+    z-index: 3;
+
+    clip-path: circle(25%);
+}
+
+.letter-mask {
+    background-size: auto 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-image: url(../../image/svg/spin-puzzle-letter.svg);
+}
+
+.spin-puzzle-triangles {
+    width: 100%;
+    height: 100%;
+    position:relative;
+
+}
+
+
+.puzzle-triangle-bg {
+    clip-path: polygon(0 100%, 50% 0, 100% 100%);
+
+    background-color: #171717;
+}
+
+.puzzle-triangle-0,
+.puzzle-triangle-3,
+.puzzle-triangle-4,
+.puzzle-triangle-7,
+.puzzle-triangle-11 {
+    width: 15vw;
+    height: 20vh;
+
+    position: absolute;
+}
+.puzzle-triangle-1,
+.puzzle-triangle-2,
+.puzzle-triangle-6,
+.puzzle-triangle-10 {
+    width: 6vw;
+    height: 8vh;
+
+    position: absolute;
+}
+
+.puzzle-triangle-5,
+.puzzle-triangle-8,
+.puzzle-triangle-9 {
+    width: 9vw;
+    height: 12vh; 
+
+    position: absolute;
+}
+
+.puzzle-triangle-0 {
+    transform: rotate(-43deg);
+
+    top: 30vh;
+    left: -1vw;
+}
+.puzzle-triangle-1 {
+    transform: rotate(43deg);
+
+    top: 80vh;
+    left: 10vw;
+}
+.puzzle-triangle-2 {
+    transform: rotate(20deg);
+
+    top: 45vh;
+    left: 20vw;
+}
+.puzzle-triangle-3 {
+    transform: rotate(140deg);
+
+    top: -1vh;
+    left: 12vw;
+}
+.puzzle-triangle-4 {
+    transform: rotate(-20deg);
+
+    top: 55vh;
+    left: 30vw;
+}
+.puzzle-triangle-5 {
+    transform: rotate(20deg);
+
+    top: 5vh;
+    left: 40vw;
+}
+.puzzle-triangle-6 {
+    transform: rotate(95deg);
+
+    top: 50vh;
+    left: 55vw;
+}
+.puzzle-triangle-7 {
+    transform: rotate(-50deg);
+
+    top: -10vh;
+    left: 55vw;
+}
+.puzzle-triangle-8 {
+    transform: rotate(-10deg);
+
+    top: 30vh;
+    left: 70vw;
+}
+.puzzle-triangle-9 {
+    transform: rotate(70deg);
+
+    top: 80vh;
+    left: 70vw;
+}
+.puzzle-triangle-10 {
+    transform: rotate(-20deg);
+
+    top: 10vh;
+    left: 90vw;
+}
+.puzzle-triangle-11 {
+    transform: rotate(20deg);
+
+    top: 45vh;
+    left: 85vw;
+}

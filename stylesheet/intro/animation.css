@@ -1,0 +1,16 @@
+@keyframes solve-ticker{
+    to {
+        transform: translateX(-13.3em);
+    }
+}
+
+#solve-ticker span {
+    animation-name: solve-ticker;
+    animation-duration: 1.5s;
+}
+
+#riddle-ticker span {
+    transform: translateX(-11.7em);
+    animation-name: reverse-ticker;
+    animation-duration: 1.2s;
+}

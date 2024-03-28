@@ -1,0 +1,16 @@
+@keyframes think-ticker {
+    to {
+        transform: translateX(-12.1em);
+    }
+}
+
+#think-ticker span {
+    animation-name: think-ticker;
+    animation-duration: 1.5s;
+}
+
+#author-ticker span {
+    transform: translateX(-11.8em);
+    animation-name: reverse-ticker;
+    animation-duration: 1.2s;
+}

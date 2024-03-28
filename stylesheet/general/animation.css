@@ -1,0 +1,10 @@
+.ticker span, .infinite-animation {
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes reverse-ticker {
+    to {
+        transform: translateX(0);
+    }
+}
