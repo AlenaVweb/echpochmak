@@ -7,6 +7,8 @@ import { screenObserver } from "./common/triangle-fall-animation.js";
 
 export const spinPuzzle = {
     screenId: 'spin-puzzle-screen',
+    nextScreenId: 'falling-triangle-screen',
+    hint: 'Кликни на круги и собери букву',
     init,
 }
 
@@ -56,7 +58,7 @@ function spinPuzzleCircle(event) {
         }
 
         if (!isPuzzleCircleCompleted(element)) {
-            unlockSpinning(element)
+            unlockSpinning(element);
 
             return;
         }
@@ -91,7 +93,7 @@ function playCircleCompleteAnimation(element) {
 }
 
 function canSpin(circleElement) {
-    circleElement.onclick !== null;
+    return circleElement.onclick !== null;
 }
 
 function lockSpinning(circleElement) {

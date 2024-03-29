@@ -2,6 +2,8 @@ import { dispatchCompleteEvent } from "./common/general-functions.js";
 
 export const catcherPuzzle = {
     screenId: 'block-catcher-screen',
+    nextScreenId: 'echpochmack-screen',
+    hint: 'Поймай букву в кольцо',
     init,
 };
 
@@ -54,10 +56,13 @@ function getLetters() {
 }
 
 function onLetterClick(event) {
-    const letterElement = event.target;
+    event.stopPropagation();
 
-    const letterClasses = letterElement.parentElement.className.split(' ');
+    const letterElement = event.target.parentElement;
+
+    const letterClasses = letterElement.className.split(' ');
     let className = '';
+
     if (letterClasses.includes('letter-A')) {
         className = 'ticker-letter-A';
     } else if (letterClasses.includes('letter-K')) {
@@ -73,7 +78,7 @@ function onLetterClick(event) {
     letterElement.removeEventListener('click', onLetterClick);
     letterElement.style.display = 'none';
 
-    if (isPuzzleSolved) {
+    if (isPuzzleSolved()) {
         dispatchCompleteEvent(catcherPuzzle.screenId);
     }
 }

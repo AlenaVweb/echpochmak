@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <main id="main-content">
-        <div class="help-tip" onclick="toggleOverlay('open')">
+        <div id="tip-button" class="help-tip">
             <span>?</span>
         </div>
-        
-        <div class="overlay" id="overlay" onclick="toggleOverlay('close')">
+
+        <div class="overlay" id="overlay">
             <div class="overlay-content" id="overlay-content">
             </div>
         </div>
+
         <section id="intro-screen" class="screen main-gradient-background">
             <article id="solve-ticker" class="ticker">
                 <span class="font-red">разгадай</span><span class="font-blue">разгадай</span>

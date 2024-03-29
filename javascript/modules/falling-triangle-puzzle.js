@@ -3,6 +3,8 @@ import { dispatchCompleteEvent } from "./common/general-functions.js";
 
 export const trianglePuzzle = {
     screenId: 'falling-triangle-screen',
+    nextScreenId: 'block-catcher-screen',
+    hint: 'Нажми на буквы',
     init,
 }
 

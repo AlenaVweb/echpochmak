@@ -23,7 +23,7 @@ body::-webkit-scrollbar, html::-webkit-scrollbar {
 
 .main-gradient-background {
     background-image: linear-gradient(red 0%, #0047ff 33%, red 66%, #0047ff 100%);
-    background-size: 100% 200%; /* Устанавливает высоту градиента в два раза больше высоты элемента */
+    background-size: 100% 200%; 
     background-repeat: no-repeat;
 
     animation: gradientShift 8s infinite;

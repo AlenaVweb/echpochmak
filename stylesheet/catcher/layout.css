@@ -19,22 +19,13 @@
 
     background-image: url(../../image/svg/big_hypnosis.svg);
     background-repeat: no-repeat;
+    overflow: hidden;
 
     z-index: 0;
     background-position: -150vw -470vh;
 }
 
 .block-catcher-triangle {
-    /*
-    width: 100vw;
-    height: 87vw;
-
-    position: absolute;
-    top: -30vw;
-
-    background-color: rgba(255, 0, 0, 0.33);
-     */
-
     width: 100vw;
     height: 100vh;
 
@@ -74,5 +65,8 @@
 
     top: 0;
 
+    z-index: 1000;
+
     display: none;
+    pointer-events: none;
 }

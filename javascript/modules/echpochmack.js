@@ -1,14 +1,10 @@
 export const echpochmackScreen = {
     screenId: 'echpochmack-screen',
+    hint: 'Крути',
     init,
 };
 
-let scrollProgressBar = 0;
-
 let backgroundChanged = false;
-let screenIsDark = false;
-const SIZE_MAXIMUM = 8000;
-const PATTERN_PASSED = 30000;
 
 function init() {
     document.getElementById(echpochmackScreen.screenId).addEventListener(
@@ -18,11 +14,15 @@ function init() {
 }
 
 function onEchpochmackWheelScroll(event) {
-    event.preventDefault();
+    if (backgroundChanged) {
+        event.preventDefault();
+    }
 
     const deltaY = event.deltaY / 5;
 
-    if (!backgroundChanged) {
+    if (deltaY < 0) {
+        return;
+    } else if (!backgroundChanged) {
         changeBackgroundColor(echpochmack);
     } else if (!isScreenDark()) {
         increaseElementSize('echpochmack', deltaY, deltaY * 0.87)

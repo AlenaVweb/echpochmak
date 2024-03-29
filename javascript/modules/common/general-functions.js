@@ -14,9 +14,9 @@ export function lockScreen(screenId) {
 }
 
 export function dispatchCompleteEvent(screenId) {
-    const event = new CustomEvent('puzzleCompleted', { screenId: screenId });
+    const event = new CustomEvent('puzzleCompleted', { detail: { id: screenId } });
 
-    dispatchEvent(event);
+    document.dispatchEvent(event);
 }
 
 export function unlockScreen(screenId) {

@@ -212,6 +212,8 @@
     background-image: url(../../image/svg/big_hypnosis.svg);
     background-repeat: no-repeat;
 
+    overflow: hidden;
+
     z-index: 0;
     background-position: 0vw 0vh;
     
