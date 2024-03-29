@@ -8,3 +8,51 @@
         transform: translateX(0);
     }
 }
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 100%;
+    }
+    50% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 0% 100%
+    }
+}
+
+@keyframes small-circular-move {
+    0% {
+        background-position: -100vw -150vh;
+    }
+    25% {
+        background-position: -90vw -140vh;
+    }
+    50% {
+        background-position: -80vw -120vh;
+    }
+    75% {
+        background-position: -90vw -140vh;
+    }
+    100% {
+        background-position: -100vw -150vh;
+}
+}
+
+@keyframes big-circular-move {
+    0% {
+        background-position: -150vw -470vh;
+    }
+    25% {
+        background-position: -110vw -440vh;
+    }
+    50% {
+        background-position: -140vw -410vh;
+    }
+    75% {
+        background-position: -130vw -440vh;
+    }
+    100% {
+        background-position: -150vw -470vh;
+}
+}

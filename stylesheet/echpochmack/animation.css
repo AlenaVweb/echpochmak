@@ -1,11 +1,11 @@
-@keyframes think-ticker {
+@keyframes title-ticker {
     to {
-        transform: translateX(-12.1em);
+        transform: translateX(-16.2em);
     }
 }
 
-#think-ticker span {
-    animation-name: think-ticker;
+#title-ticker span {
+    animation-name: title-ticker;
     animation-duration: 1.5s;
 }
 

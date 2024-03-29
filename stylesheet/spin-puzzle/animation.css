@@ -1,6 +1,6 @@
 @keyframes complete-spin-puzzle-circle {
     to {
-        background-image: url(../image/svg/spin-puzzle-letter-completed.svg);
+        background-image: url(../../image/svg/spin-puzzle-letter-completed.svg);
         background-color: rgb(0, 0, 0, 20%);
     }
 }

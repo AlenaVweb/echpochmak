@@ -95,16 +95,17 @@
 #triangle-7,
 #triangle-11 {
     width: 15vw;
-    height: 20vh;
+    height: 13vw;
 
     position: absolute;
 }
+
 #triangle-1,
 #triangle-2,
 #triangle-6,
 #triangle-10 {
     width: 6vw;
-    height: 8vh;
+    height: 5.2vw;
 
     position: absolute;
 }
@@ -113,7 +114,7 @@
 #triangle-8,
 #triangle-9 {
     width: 9vw;
-    height: 12vh; 
+    height: 7.8vw; 
 
     position: absolute;
 }
@@ -124,69 +125,95 @@
     top: 30vh;
     left: -1vw;
 }
+
 #triangle-1 {
     transform: rotate(43deg);
 
     top: 80vh;
     left: 10vw;
 }
+
 #triangle-2 {
     transform: rotate(20deg);
 
     top: 45vh;
     left: 20vw;
 }
+
 #triangle-3 {
     transform: rotate(140deg);
 
     top: -1vh;
     left: 12vw;
 }
+
 #triangle-4 {
     transform: rotate(-20deg);
 
     top: 55vh;
     left: 30vw;
 }
+
 #triangle-5 {
     transform: rotate(20deg);
 
     top: 5vh;
     left: 40vw;
 }
+
 #triangle-6 {
     transform: rotate(95deg);
 
     top: 50vh;
     left: 55vw;
 }
+
 #triangle-7 {
     transform: rotate(-50deg);
 
     top: -10vh;
     left: 55vw;
 }
+
 #triangle-8 {
     transform: rotate(-10deg);
 
     top: 30vh;
     left: 70vw;
 }
+
 #triangle-9 {
     transform: rotate(70deg);
 
     top: 80vh;
     left: 70vw;
 }
+
 #triangle-10 {
     transform: rotate(-20deg);
 
     top: 10vh;
     left: 90vw;
 }
+
 #triangle-11 {
     transform: rotate(20deg);
 
     top: 45vh;
     left: 85vw;
+}
+
+.falling-triangle-big-bg {
+    width: 100vw;
+    height: 100vh;
+
+    position: absolute;
+
+    background-image: url(../../image/svg/big_hypnosis.svg);
+    background-repeat: no-repeat;
+
+    z-index: 0;
+    background-position: 0vw 0vh;
+    
+    animation: big-circular-move 5s linear infinite;
 }

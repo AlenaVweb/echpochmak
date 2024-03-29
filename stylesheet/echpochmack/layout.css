@@ -1,0 +1,82 @@
+#echpochmack-screen {
+    position: relative;
+}
+
+.echpochmack-big-bg {
+    width: 100vw;
+    height: 100vh;
+
+    position: absolute;
+
+    background-image: url(../../image/svg/big_hypnosis.svg);
+    background-repeat: no-repeat;
+
+    z-index: 0;
+    background-position: 0vw 0vh;
+}
+
+.echpochmack-small-bg {
+    width: 100vw;
+    height: 100vh;
+
+    position: absolute;
+
+    background-image: url(../../image/svg/small_hypnosis.svg);
+    background-repeat: no-repeat;
+
+    z-index: 0;
+    background-position: 0vw 0vh;
+}
+
+#echpochmack {
+    width: 40vw;
+    height: 34.8vw;
+
+    position: absolute;
+
+    z-index: 100;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+#echpochmack-pattern {
+    width: 0;
+    height: 0;
+
+    background-image: url(../../image/svg/echpochmack-pattern.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    position: absolute;
+
+    z-index: 101;
+
+    top: 55%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+#echpochmack-finish {
+    width: 70vw;
+
+    position: absolute;
+
+    z-index: 102;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    font-size: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1;
+}

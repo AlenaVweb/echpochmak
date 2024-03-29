@@ -8,6 +8,14 @@
 </head>
 <body>
     <main id="main-content">
+        <div class="help-tip" onclick="toggleOverlay('open')">
+            <span>?</span>
+        </div>
+        
+        <div class="overlay" id="overlay" onclick="toggleOverlay('close')">
+            <div class="overlay-content" id="overlay-content">
+            </div>
+        </div>
         <section id="intro-screen" class="screen main-gradient-background">
             <article id="solve-ticker" class="ticker">
                 <span class="font-red">разгадай</span><span class="font-blue">разгадай</span>
@@ -17,6 +25,8 @@
                 <span class="font-red">разгадай</span><span class="font-blue">разгадай</span>
             </article>
             <section id="intro-content" class="content">
+                <div class="intro-big-bg"></div>
+                <div class="intro-small-bg"></div>
                 <div id="intro-header" class="show-on-landscape">
                     <h1>Три угла Три стороны</h1>
                 </div>
@@ -34,66 +44,92 @@
             </article>
         </section>
         <section id="spin-puzzle-screen" class="screen main-gradient-background">
+            <div class="spin-puzzle-small-bg"></div>
             <div class="spin-puzzle-triangles">
-                    <div class="puzzle-triangle-bg puzzle-triangle-0"></div>
-                    <div class="puzzle-triangle-bg puzzle-triangle-1"></div>
-                    <div class="puzzle-triangle-bg puzzle-triangle-2"></div>
-                    <div class="puzzle-triangle-bg puzzle-triangle-3"></div>
-                    <div class="puzzle-triangle-bg puzzle-triangle-4"></div>
-                    <div class="puzzle-triangle-bg puzzle-triangle-5"></div>
-                    <div class="puzzle-triangle-bg puzzle-triangle-6"></div>
-                    <div class="puzzle-triangle-bg puzzle-triangle-7"></div>
-                    <div class="puzzle-triangle-bg puzzle-triangle-8"></div>
-                    <div class="puzzle-triangle-bg puzzle-triangle-9"></div>
-                    <div class="puzzle-triangle-bg puzzle-triangle-10"></div>
-                    <div class="puzzle-triangle-bg puzzle-triangle-11"></div>
+                <div class="triangle-box">
+                    <div id="puzzle-triangle-0" fall-speed="2" class="triangle bg-black"></div>
+                </div>
+                <div class="triangle-box">
+                    <div id="puzzle-triangle-1" fall-speed="2" class="triangle bg-black"></div>
+                </div>
+                <div class="triangle-box">
+                    <div id="puzzle-triangle-2" fall-speed="2" class="triangle bg-black"></div>
+                </div>
+                <div class="triangle-box">
+                    <div id="puzzle-triangle-3" fall-speed="2" class="triangle bg-black"></div>
+                </div>
+                <div class="triangle-box">
+                    <div id="puzzle-triangle-4" fall-speed="2" class="triangle bg-black"></div>
+                </div>
+                <div class="triangle-box">
+                    <div id="puzzle-triangle-5" fall-speed="2" class="triangle bg-black"></div>
+                </div>
+                <div class="triangle-box">
+                    <div id="puzzle-triangle-6" fall-speed="2" class="triangle bg-black"></div>
+                </div>
+                <div class="triangle-box">
+                    <div id="puzzle-triangle-7" fall-speed="2" class="triangle bg-black"></div>
+                </div>
+                <div class="triangle-box">
+                    <div id="puzzle-triangle-8" fall-speed="2" class="triangle bg-black"></div>
+                </div>
+                <div class="triangle-box">
+                    <div id="puzzle-triangle-9" fall-speed="2" class="triangle bg-black"></div>
+                </div>
+                <div class="triangle-box">
+                    <div id="puzzle-triangle-10" fall-speed="2" class="triangle bg-black"></div>
+                </div>
+                <div class="triangle-box">
+                    <div id="puzzle-triangle-11" fall-speed="2" class="triangle bg-black"></div>
+                </div>
             </div>
             <div id="spin-puzzle-wrapper">
                 <div id="outer-spin-circle" class="puzzle-circle bg-blue">
                     <div class="puzzle-circle-letter letter-mask"></div>
                 </div>
-                
+
                 <div id="middle-spin-circle" class="puzzle-circle bg-red">
                     <div class="puzzle-circle-letter letter-mask"></div>
                 </div>
-    
-                <div id="inner-spin-circle" class="puzzle-circle bg-black">                                
+
+                <div id="inner-spin-circle" class="puzzle-circle bg-black">
                     <div class="puzzle-circle-letter letter-mask"></div>
                 </div>
             </div>
         </section>
         <section id="falling-triangle-screen" class="screen">
-            
+            <div class="falling-triangle-big-bg"></div>
+
             <article id="falling-triangle-ticker" class="ticker">
-                <span class="s-char">с</span><span class="b-char">б</span><span class="o-char">о</span>
-                <span class="s-char">б</span><span class="m-char">м</span>
+                <span class="char">с</span><span class="char">б</span><span class="char">о</span>
+                <span class="char">б</span><span class="char">м</span>
 
-                <span class="s-char">с</span><span class="b-char">б</span><span class="o-char">о</span>
-                <span class="s-char">б</span><span class="m-char">м</span>
-                
-                <span class="s-char">с</span><span class="b-char">б</span><span class="o-char">о</span>
-                <span class="s-char">б</span><span class="m-char">м</span>
+                <span class="char">с</span><span class="char">б</span><span class="char">о</span>
+                <span class="char">б</span><span class="char">м</span>
 
-                <span class="s-char">с</span><span class="b-char">б</span><span class="o-char">о</span>
-                <span class="s-char">б</span><span class="m-char">м</span>
+                <span class="char">с</span><span class="char">б</span><span class="char">о</span>
+                <span class="char">б</span><span class="char">м</span>
 
-                <span class="s-char">с</span><span class="b-char">б</span><span class="o-char">о</span>
-                <span class="s-char">б</span><span class="m-char">м</span>
+                <span class="char">с</span><span class="char">б</span><span class="char">о</span>
+                <span class="char">б</span><span class="char">м</span>
 
-                <span class="s-char">с</span><span class="b-char">б</span><span class="o-char">о</span>
-                <span class="s-char">б</span><span class="m-char">м</span>
+                <span class="char">с</span><span class="char">б</span><span class="char">о</span>
+                <span class="char">б</span><span class="char">м</span>
 
-                <span class="s-char">с</span><span class="b-char">б</span><span class="o-char">о</span>
-                <span class="s-char">б</span><span class="m-char">м</span>
+                <span class="char">с</span><span class="char">б</span><span class="char">о</span>
+                <span class="char">б</span><span class="char">м</span>
 
-                <span class="s-char">с</span><span class="b-char">б</span><span class="o-char">о</span>
-                <span class="s-char">б</span><span class="m-char">м</span>
+                <span class="char">с</span><span class="char">б</span><span class="char">о</span>
+                <span class="char">б</span><span class="char">м</span>
 
-                <span class="s-char">с</span><span class="b-char">б</span><span class="o-char">о</span>
-                <span class="s-char">б</span><span class="m-char">м</span>
+                <span class="char">с</span><span class="char">б</span><span class="char">о</span>
+                <span class="char">б</span><span class="char">м</span>
 
-                <span class="s-char">с</span><span class="b-char">б</span><span class="o-char">о</span>
-                <span class="s-char">б</span><span class="m-char">м</span>
+                <span class="char">с</span><span class="char">б</span><span class="char">о</span>
+                <span class="char">б</span><span class="char">м</span>
+
+                <span class="char">с</span><span class="char">б</span><span class="char">о</span>
+                <span class="char">б</span><span class="char">м</span>
             </article>
 
             <section id="falling-triangle-content" class="content">
@@ -122,60 +158,89 @@
                 </section>
                 <section id="falling-triangle-puzzle">
                     <div class="triangle-box">
-                        <div id="triangle-0" class="triangle bg-blue"></div>
+                        <div id="triangle-0" fall-speed="2" class="puzzle-triangle triangle bg-blue font-8">с</div>
                     </div>
                     <div class="triangle-box">
-                        <div id="triangle-1" class="triangle main-gradient-background"></div>
+                        <div id="triangle-1" fall-speed="2" class="triangle main-gradient-background"></div>
                     </div>
                     <div class="triangle-box">
-                        <div id="triangle-2" class="triangle main-gradient-background"></div>
+                        <div id="triangle-2" fall-speed="2" class="triangle main-gradient-background"></div>
                     </div>
                     <div class="triangle-box">
-                        <div id="triangle-3" class="triangle main-gradient-background"></div>
+                        <div id="triangle-3" fall-speed="2" class="triangle main-gradient-background"></div>
                     </div>
                     <div class="triangle-box">
-                        <div id="triangle-4" class="triangle main-gradient-background"></div>
+                        <div id="triangle-4" fall-speed="2" class="triangle main-gradient-background"></div>
                     </div>
                     <div class="triangle-box">
-                        <div id="triangle-5" class="triangle bg-blue"></div>
+                        <div id="triangle-5" fall-speed="2" class="puzzle-triangle triangle bg-blue font-5">м</div>
                     </div>
                     <div class="triangle-box">
-                        <div id="triangle-6" class="triangle main-gradient-background"></div>
+                        <div id="triangle-6" fall-speed="2" class="triangle main-gradient-background"></div>
                     </div>
                     <div class="triangle-box">
-                        <div id="triangle-7" class="triangle main-gradient-background"></div>
+                        <div id="triangle-7" fall-speed="2" class="triangle main-gradient-background"></div>
                     </div>
                     <div class="triangle-box">
-                        <div id="triangle-8" class="triangle bg-red"></div>
+                        <div id="triangle-8" fall-speed="2" class="puzzle-triangle triangle bg-red font-5">б</div>
                     </div>
                     <div class="triangle-box">
-                        <div id="triangle-9" class="triangle main-gradient-background"></div>
+                        <div id="triangle-9" fall-speed="2" class="triangle main-gradient-background"></div>
                     </div>
                     <div class="triangle-box">
-                        <div id="triangle-10" class="triangle main-gradient-background"></div>
+                        <div id="triangle-10" fall-speed="2" class="triangle main-gradient-background"></div>
                     </div>
                     <div class="triangle-box">
-                        <div id="triangle-11" class="triangle bg-blue"></div>
+                        <div id="triangle-11" fall-speed="2" class="puzzle-triangle triangle bg-blue font-8">о</div>
                     </div>
                 </section>
             </section>
         </section>
-        <section id="block-puzzle-screen" class="screen">
-            <section id="block-puzzle" class="content">
+        <section id="block-catcher-screen" class="screen main-gradient-background">
+            <div id="mouse-circle"></div>
+            <article id="catcher-ticker" class="ticker">
+                <span class="ticker-word">2сбосм<span class="hidden-letter ticker-letter-A font-red">а</span><span class="hidden-letter ticker-letter-K font-blue">к</span></span>
+                <span class="ticker-word">2сбосм<span class="hidden-letter ticker-letter-A font-red">а</span><span class="hidden-letter ticker-letter-K font-blue">к</span></span>
+                <span class="ticker-word">2сбосм<span class="hidden-letter ticker-letter-A font-red">а</span><span class="hidden-letter ticker-letter-K font-blue">к</span></span>
+                <span class="ticker-word">2сбосм<span class="hidden-letter ticker-letter-A font-red">а</span><span class="hidden-letter ticker-letter-K font-blue">к</span></span>
+                <span class="ticker-word">2сбосм<span class="hidden-letter ticker-letter-A font-red">а</span><span class="hidden-letter ticker-letter-K font-blue">к</span></span>
+                <span class="ticker-word">2сбосм<span class="hidden-letter ticker-letter-A font-red">а</span><span class="hidden-letter ticker-letter-K font-blue">к</span></span>
+                <span class="ticker-word">2сбосм<span class="hidden-letter ticker-letter-A font-red">а</span><span class="hidden-letter ticker-letter-K font-blue">к</span></span>
+                <span class="ticker-word">2сбосм<span class="hidden-letter ticker-letter-A font-red">а</span><span class="hidden-letter ticker-letter-K font-blue">к</span></span>
+                <span class="ticker-word">2сбосм<span class="hidden-letter ticker-letter-A font-red">а</span><span class="hidden-letter ticker-letter-K font-blue">к</span></span>
+                <span class="ticker-word">2сбосм<span class="hidden-letter ticker-letter-A font-red">а</span><span class="hidden-letter ticker-letter-K font-blue">к</span></span>            </article>
+            <section id="block-catcher" class="content">
+                <div class="block-catcher-bg"></div>
+                <div class="block-catcher-triangle"></div>
 
+                <div class="block-catcher-main">
+                    <div class="block-catcher-letter letter-A"><img src="image/svg/letter_A.svg" alt=""></div>
+                    <div class="block-catcher-letter letter-K"><img src="image/svg/letter_K.svg" alt=""></div>
+                </div>
             </section>
         </section>
         <section id="echpochmack-screen" class="screen main-gradient-background">
-            <article id="think-ticker" class="ticker">
-                <span class="font-red">подумай</span><span class="font-blue">подумай</span>
-                <span class="font-red">подумай</span><span class="font-blue">подумай</span>
-                <span class="font-red">подумай</span><span class="font-blue">подумай</span>
-                <span class="font-red">подумай</span><span class="font-blue">подумай</span>
-                <span class="font-red">подумай</span><span class="font-blue">подумай</span>
+            <div class="echpochmack-big-bg"></div>
+            <div class="echpochmack-small-bg"></div>
+            <article id="title-ticker" class="ticker">
+                <span class="font-red">три</span><span class="font-blue">угла</span>
+                <span class="font-red">три</span><span class="font-blue">стороны</span>
+                <span class="font-red">три</span><span class="font-blue">угла</span>
+                <span class="font-red">три</span><span class="font-blue">стороны</span>
+                <span class="font-red">три</span><span class="font-blue">угла</span>
+                <span class="font-red">три</span><span class="font-blue">стороны</span>
+                <span class="font-red">три</span><span class="font-blue">угла</span>
             </article>
-            <section id="echpochmack-content" class="content">
 
-            </section>
+            <div class="content">
+                <div id="echpochmack" class="triangle main-gradient-background"></div>
+                <div id="echpochmack-pattern"></div>
+                <div id="echpochmack-finish">
+                    <span>2сбосмак</span>
+                    <span>эчпочмак</span>
+                </div>
+            </div>
+
             <article id="author-ticker" class="ticker">
                 <span>Алёна</span><span>Ветошкина</span>
                 <span>Алёна</span><span>Ветошкина</span>
@@ -186,8 +251,6 @@
         </section>
     </main>
 
-    <!-- <script src="javascript/spin-puzzle.js" type="module"></script>
-    <script src="javascript/falling-triangle-puzzle.js" type="module"></script>
-    <script src="javascript/block-puzzle.js" type="module"></script> -->
+    <script src="javascript/main.js" type="module"></script>
 </body>
 </html>

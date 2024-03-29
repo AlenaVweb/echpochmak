@@ -9,12 +9,14 @@
     padding: 20px;
 
     border-style: solid;
-    border-color: black;
+    border-color: #171717;
     border-radius: 15px;
+
+    z-index: 2;
 }
 
 #intro-header, #intro-header-mobile h1 {
-    background-color: black;
+    background-color: #171717;
 }
 
 #intro-header h1, #intro-header-mobile h1 {
@@ -46,6 +48,35 @@
     font-size: 10vw;
 
     border-style: solid;
-    border-color: black;
+    border-color: #171717;
     border-radius: 10px;
+}
+
+.intro-big-bg {
+    width: 100vw;
+    height: 100vh;
+
+    position: absolute;
+
+    background-image: url(../../image/svg/big_hypnosis.svg);
+    background-repeat: no-repeat;
+
+    z-index: 1;
+    background-position: -150vw -470vh;
+
+    animation: big-circular-move 5s linear infinite;
+}
+
+.intro-small-bg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+
+    background-image: url(../../image/svg/small_hypnosis.svg);
+    background-repeat: no-repeat;
+
+    z-index: 0;
+    background-position: -100vw -100vh;
+
+    animation: small-circular-move 5s linear infinite;
 }

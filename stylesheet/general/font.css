@@ -23,3 +23,19 @@ body, html {
 .font-blue {
     color: #0047ff;
 }
+
+.triangle {
+    text-transform: uppercase;
+}
+
+.font-3 {
+    font-size: 3vw;
+}
+
+.font-5 {
+    font-size: 5vw;
+}
+
+.font-8 {
+    font-size: 8vw;
+}

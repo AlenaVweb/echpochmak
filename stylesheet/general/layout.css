@@ -2,6 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
 
+    scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
 }
 
@@ -22,13 +23,17 @@ body::-webkit-scrollbar, html::-webkit-scrollbar {
 
 .main-gradient-background {
     background-image: linear-gradient(red 0%, #0047ff 33%, red 66%, #0047ff 100%);
+    background-size: 100% 200%; /* Устанавливает высоту градиента в два раза больше высоты элемента */
+    background-repeat: no-repeat;
+
+    animation: gradientShift 8s infinite;
 }
 
 .ticker, .ticker-reverse {
     min-height: 10vh;
     max-height: 15vh;
 
-    background-color: black;
+    background-color: #171717;
 
     display: flex;
     align-items: center;
@@ -36,6 +41,8 @@ body::-webkit-scrollbar, html::-webkit-scrollbar {
 
     position: relative;
     z-index: 99;
+
+    text-wrap: nowrap;
 }
 
 .ticker-reverse {
@@ -47,7 +54,7 @@ body::-webkit-scrollbar, html::-webkit-scrollbar {
 }
 
 .bg-black {
-    background-color: black;
+    background-color: #171717;
 }
 
 .bg-red {
@@ -56,4 +63,61 @@ body::-webkit-scrollbar, html::-webkit-scrollbar {
 
 .bg-blue {
     background-color: #0047ff;
+}
+
+.triangle {
+    clip-path: polygon(0 100%, 50% 0, 100% 100%);
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.triangle-box {
+    filter: url(../../image/svg/round-filter.svg#round-filter);
+}
+
+.help-tip {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.35); 
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 1000; 
+    font-family: 'Roboto', sans-serif;
+}
+
+.help-tip span {
+    display: block;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 999; 
+}
+
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    text-align: center;
 }

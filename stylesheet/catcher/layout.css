@@ -1,0 +1,78 @@
+#block-catcher-screen {
+    width: 100vw;
+
+    position: relative;
+}
+
+#block-catcher {
+    height: 100vh;
+    width: 100vw;
+
+    position: relative;
+}
+
+.block-catcher-bg {
+    width: 100vw;
+    height: 100vh;
+
+    position: absolute;
+
+    background-image: url(../../image/svg/big_hypnosis.svg);
+    background-repeat: no-repeat;
+
+    z-index: 0;
+    background-position: -150vw -470vh;
+}
+
+.block-catcher-triangle {
+    /*
+    width: 100vw;
+    height: 87vw;
+
+    position: absolute;
+    top: -30vw;
+
+    background-color: rgba(255, 0, 0, 0.33);
+     */
+
+    width: 100vw;
+    height: 100vh;
+
+    position: absolute;
+
+    background-image: url(../../image/svg/red_triangle.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    z-index: 1;
+}
+
+.letter-A {
+    position: absolute;
+
+    z-index: 2;
+    top: 17vh;
+    left: 20vw;
+}
+
+.letter-K {
+    position: absolute;
+
+    z-index: 102;
+
+    top: 17vh;
+    left: 55vw;
+}
+
+#mouse-circle {
+    border-radius: 50%;
+	height: 40vh;
+	width: 40vh;
+	border: 6vh solid black;
+
+    position: absolute;
+
+    top: 0;
+
+    display: none;
+}
