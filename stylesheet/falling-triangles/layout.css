@@ -21,8 +21,7 @@
     transform: translate(-50%, -35%);
 }
 
-/* Commented parts are for circle rotation animation */
-.spinner-circle /*, .spinner-circle-mask */ {
+.spinner-circle  {
     width: 100%;
     height: 100%;
 
@@ -31,45 +30,27 @@
 
 #spinner-first-circle {
     clip-path: circle(50%);
-    /* transform: rotate(30deg); */
 }
 
 #spinner-second-circle {
     clip-path: circle(42.5%);
-    /* transform: rotate(-60deg); */
 }
 
 #spinner-third-circle {
     clip-path: circle(35%);
-    /* transform: rotate(90deg); */
 }
 
 #spinner-fourth-circle {
     clip-path: circle(27.5%);
-    /* transform: rotate(-120deg); */
 }
 
 #spinner-fifth-circle {
     clip-path: circle(20%);
-    /* transform: rotate(150deg); */
 }
 
 #spinner-sixth-circle {
     clip-path: circle(12.5%);
-    /* transform: rotate(-180deg); */
 }
-
-/* .spinner-circle-mask-black {
-    background-image: linear-gradient(to right, transparent 0 49.5%, black 49.5% 50.5%, transparent 50.5% 100%);
-}
-
-.spinner-circle-mask-blue {
-    background-image: linear-gradient(to right, transparent 0 49.5%, #0047ff 49.5% 50.5%, transparent 50.5% 100%);
-}
-
-.spinner-circle-mask-red {
-    background-image: linear-gradient(to right, transparent 0 49.5%, red 49.5% 50.5%, transparent 50.5% 100%);
-} */
 
 #falling-triangle-puzzle {
     position:relative;
