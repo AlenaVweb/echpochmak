@@ -16,14 +16,11 @@
     height: 100%;
 
     position: absolute;
-
-    top: 50%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
+    z-index: 0;
 
     background-image: url(../../image/svg/big_hypnosis.svg);
     background-repeat: no-repeat;
+    background-position: -150vw -470vh;
 
     overflow: hidden;
 }
