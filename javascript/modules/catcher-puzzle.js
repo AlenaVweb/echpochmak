@@ -58,7 +58,7 @@ function getLetters() {
 function onLetterClick(event) {
     event.stopPropagation();
 
-    const letterElement = event.target.parentElement;
+    const letterElement = event.target;
 
     const letterClasses = letterElement.className.split(' ');
     let className = '';
@@ -76,7 +76,7 @@ function onLetterClick(event) {
     }
 
     letterElement.removeEventListener('click', onLetterClick);
-    letterElement.style.display = 'none';
+    letterElement.style.visibility = 'hidden';
 
     if (isPuzzleSolved()) {
         dispatchCompleteEvent(catcherPuzzle.screenId);
@@ -93,7 +93,7 @@ function getTickerConcreteHiddenLetters(className) {
 
 function isPuzzleSolved() {
     for (const letterElement of getLetters()) {
-        if (letterElement.style.display !== 'none') {
+        if (letterElement.style.visibility !== 'hidden') {
             return false;
         }
     }

@@ -12,17 +12,20 @@
 }
 
 .block-catcher-bg {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 
     position: absolute;
 
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
     background-image: url(../../image/svg/big_hypnosis.svg);
     background-repeat: no-repeat;
-    overflow: hidden;
 
-    z-index: 0;
-    background-position: -150vw -470vh;
+    overflow: hidden;
 }
 
 .block-catcher-triangle {
@@ -34,25 +37,61 @@
     background-image: url(../../image/svg/red_triangle.svg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 100%;
 
     z-index: 1;
 }
 
-.letter-A {
+.block-catcher-triangle {
+    width: 100vw;
+    height: 87vw;
+
     position: absolute;
 
+    left: 50%;
+    bottom: 0;
+
+    transform: translateX(-50%);
+
+    background-color: rgba(255, 0, 0, 0.33);
+
     z-index: 2;
-    top: 17vh;
-    left: 20vw;
+}
+
+#block-catcher-main {
+    position: relative;
+
+    z-index: 3;
+
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10vw;
+}
+
+.block-catcher-letter {
+    width: 25vw;
+    height: 40vw;
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.letter-A {
+    /* position: absolute; */
+
+    background-image: url('../../image/svg/letter_A.svg');
 }
 
 .letter-K {
-    position: absolute;
+    /* position: absolute; */
 
-    z-index: 102;
-
-    top: 17vh;
-    left: 55vw;
+    background-image: url('../../image/svg/letter_K.svg');
 }
 
 #mouse-circle {

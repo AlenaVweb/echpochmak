@@ -1,0 +1,39 @@
+@media (orientation: portrait) {
+    #spin-puzzle-wrapper {
+        width: 40vh;
+        height: 40vh;
+
+        position: relative;
+
+        z-index: 10;
+    }
+
+    #puzzle-triangle-0,
+    #puzzle-triangle-3,
+    #puzzle-triangle-4,
+    #puzzle-triangle-7,
+    #puzzle-triangle-11 {
+        width: 15vh;
+        height: 13vh;
+
+        position: absolute;
+    }
+    #puzzle-triangle-1,
+    #puzzle-triangle-2,
+    #puzzle-triangle-6,
+    #puzzle-triangle-10 {
+        width: 6vh;
+        height: 5.2vh;
+
+        position: absolute;
+    }
+
+    #puzzle-triangle-5,
+    #puzzle-triangle-8,
+    #puzzle-triangle-9 {
+        width: 9vh;
+        height: 7.8vh;
+
+        position: absolute;
+    }
+}

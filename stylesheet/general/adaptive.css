@@ -3,6 +3,18 @@
         display: none !important;
         visibility: hidden !important;
     }
+
+    .font-3 {
+        font-size: 3vh;
+    }
+
+    .font-5 {
+        font-size: 5vh;
+    }
+
+    .font-8 {
+        font-size: 8vh;
+    }
 }
 
 @media (orientation: landscape) {
@@ -10,64 +22,4 @@
         display: none !important;
         visibility: hidden !important;
     }
-}
-
-@media (max-width: 768px) {
-    #spin-puzzle-wrapper {
-        width: 80vh;
-        height: 80vh;
-    
-        position: relative;
-    
-        z-index: 10;
-    
-    }
-
-    #triangle-0,
-    #triangle-3,
-    #triangle-4,
-    #triangle-7,
-    #triangle-11 {
-        width: 30vh;
-        height: 26vh;
-    
-        position: absolute;
-    }
-    
-    #triangle-1,
-    #triangle-2,
-    #triangle-6,
-    #triangle-10 {
-        width: 12vh;
-        height: 10.4vh;
-    
-        position: absolute;
-    }
-    
-    #triangle-5,
-    #triangle-8,
-    #triangle-9 {
-        width: 18vh;
-        height: 15.6vh; 
-    
-        position: absolute;
-    }
-    
-    .letter-A {
-        position: absolute;
-    
-        z-index: 2;
-        top: 17vh;
-        left: 5vw;
-    }
-    
-    .letter-K {
-        position: absolute;
-    
-        z-index: 3;
-    
-        top: 17vh;
-        left: 10vw;
-    }
-    
 }

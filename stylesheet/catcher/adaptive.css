@@ -1,0 +1,28 @@
+@media (orientation: portrait) {
+    #block-catcher-main {
+        flex-direction: column;
+
+        gap: 15vh;
+    }
+
+    .block-catcher-letter {
+        width: 20vh;
+        height: 30vh;
+    }
+
+    .block-catcher-triangle {
+        width: 100vh;
+        height: 87vh;
+    }
+
+    .block-catcher-bg {
+        background-size: auto 100vh;
+    }
+
+    #mouse-circle {
+        width: 40vw;
+        height: 40vw;
+
+    	border: 6vw solid black;
+    }
+}

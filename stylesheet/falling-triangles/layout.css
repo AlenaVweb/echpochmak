@@ -6,10 +6,6 @@
     gap: 0.2em;
 }
 
-#falling-triangle-bg {
-    position: relative;
-}
-
 #triangle-spinner-wrapper {
     width: 70vw;
     height: 70vw;
@@ -22,7 +18,7 @@
 
     top: 50%;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%, -35%);
 }
 
 /* Commented parts are for circle rotation animation */
@@ -114,7 +110,7 @@
 #triangle-8,
 #triangle-9 {
     width: 9vw;
-    height: 7.8vw; 
+    height: 7.8vw;
 
     position: absolute;
 }
@@ -216,6 +212,6 @@
 
     z-index: 0;
     background-position: 0vw 0vh;
-    
+
     animation: big-circular-move 5s linear infinite;
 }

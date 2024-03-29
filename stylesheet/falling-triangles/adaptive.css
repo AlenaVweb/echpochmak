@@ -1,0 +1,38 @@
+@media (orientation: portrait) {
+    #triangle-spinner-wrapper {
+        width: 70vh;
+        height: 70vh;
+
+        transform: translate(-50%, -50%);
+    }
+
+    #triangle-0,
+    #triangle-3,
+    #triangle-4,
+    #triangle-7,
+    #triangle-11 {
+        width: 15vh;
+        height: 13vh;
+
+        position: absolute;
+    }
+
+    #triangle-1,
+    #triangle-2,
+    #triangle-6,
+    #triangle-10 {
+        width: 6vh;
+        height: 5.2vh;
+
+        position: absolute;
+    }
+
+    #triangle-5,
+    #triangle-8,
+    #triangle-9 {
+        width: 9vh;
+        height: 7.8vh;
+
+        position: absolute;
+    }
+}
